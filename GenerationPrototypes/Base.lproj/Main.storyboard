@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenerationPrototypes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sax-fj-MQ9">
+                                <rect key="frame" x="85" y="207" width="205" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Создать новый проект">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="createNewProject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XbQ-iS-uoE"/>
+                                    <segue destination="vcb-Y6-vh7" kind="show" id="KNw-uv-8I2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayu-mE-hJ8">
+                                <rect key="frame" x="85" y="370" width="205" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Выбрать созданный проект">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseProject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdP-eN-el5"/>
+                                    <segue destination="tNj-gm-fRA" kind="show" id="yyQ-0i-9dZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="-287"/>
+        </scene>
+        <!--List Projects View Controller-->
+        <scene sceneID="Y4x-iH-WyQ">
+            <objects>
+                <viewController id="tNj-gm-fRA" customClass="ListProjectsViewController" customModule="GenerationPrototypes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2HE-Hw-gKg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-sZ-aH9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="453"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tNj-gm-fRA" id="ldN-YT-eiT"/>
+                                    <outlet property="delegate" destination="tNj-gm-fRA" id="aCT-XI-bKV"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWs-AZ-yCS">
+                                <rect key="frame" x="85" y="516" width="205" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Добавить ноывй проект">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewProject:" destination="tNj-gm-fRA" eventType="touchUpInside" id="eXL-hX-SEm"/>
+                                    <segue destination="vcb-Y6-vh7" kind="show" id="27a-My-xQO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vp5-sZ-aH9" firstAttribute="top" secondItem="u6e-mk-fmu" secondAttribute="top" id="2hg-La-azR"/>
+                            <constraint firstItem="u6e-mk-fmu" firstAttribute="trailing" secondItem="UWs-AZ-yCS" secondAttribute="trailing" constant="85" id="8hz-hT-uhj"/>
+                            <constraint firstItem="Vp5-sZ-aH9" firstAttribute="leading" secondItem="u6e-mk-fmu" secondAttribute="leading" id="Cjo-YN-EV9"/>
+                            <constraint firstItem="UWs-AZ-yCS" firstAttribute="top" secondItem="Vp5-sZ-aH9" secondAttribute="bottom" constant="63" id="dPp-NC-GhI"/>
+                            <constraint firstItem="u6e-mk-fmu" firstAttribute="bottom" secondItem="UWs-AZ-yCS" secondAttribute="bottom" constant="101" id="foN-FR-fDZ"/>
+                            <constraint firstItem="u6e-mk-fmu" firstAttribute="trailing" secondItem="Vp5-sZ-aH9" secondAttribute="trailing" id="peb-Wa-D0l"/>
+                            <constraint firstItem="UWs-AZ-yCS" firstAttribute="leading" secondItem="u6e-mk-fmu" secondAttribute="leading" constant="85" id="qs0-It-qOm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u6e-mk-fmu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6X9-Zs-ZvG"/>
+                    <connections>
+                        <outlet property="tableView" destination="Vp5-sZ-aH9" id="8UC-0K-Hjf"/>
+                        <segue destination="eXn-Se-rX6" kind="show" id="PIy-GM-WuD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ou-fE-tof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="601"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VD0-ay-nTF">
+            <objects>
+                <viewController id="eXn-Se-rX6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qu3-Xm-F7m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fdu-JA-37Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2K-d1-eRv">
+                                <rect key="frame" x="85" y="525" width="205" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Добавить новый экран">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y2K-d1-eRv" firstAttribute="top" secondItem="fdu-JA-37Y" secondAttribute="bottom" constant="73" id="3Wt-99-b8u"/>
+                            <constraint firstItem="fdu-JA-37Y" firstAttribute="top" secondItem="Wx6-Xj-0Oy" secondAttribute="top" id="50z-WZ-FWx"/>
+                            <constraint firstItem="Wx6-Xj-0Oy" firstAttribute="trailing" secondItem="Y2K-d1-eRv" secondAttribute="trailing" constant="85" id="8KI-jc-tOn"/>
+                            <constraint firstItem="Wx6-Xj-0Oy" firstAttribute="trailing" secondItem="fdu-JA-37Y" secondAttribute="trailing" id="Ahq-RI-HKo"/>
+                            <constraint firstItem="Wx6-Xj-0Oy" firstAttribute="bottom" secondItem="Y2K-d1-eRv" secondAttribute="bottom" constant="92" id="CQR-VQ-ugg"/>
+                            <constraint firstItem="fdu-JA-37Y" firstAttribute="leading" secondItem="Wx6-Xj-0Oy" secondAttribute="leading" id="DGU-Ub-md5"/>
+                            <constraint firstItem="Y2K-d1-eRv" firstAttribute="leading" secondItem="Wx6-Xj-0Oy" secondAttribute="leading" constant="85" id="n4M-xc-QAO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wx6-Xj-0Oy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sOk-ZL-5Mv"/>
+                    <connections>
+                        <segue destination="lCV-Ld-RXl" kind="show" id="uDv-Ah-cUX"/>
+                        <segue destination="vcb-Y6-vh7" kind="show" id="ESj-Tz-5Dc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVj-lS-r0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="1171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZIi-a5-EDa">
+            <objects>
+                <viewController id="vcb-Y6-vh7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BBq-xv-tAX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-qs-tni">
+                                <rect key="frame" x="46" y="194" width="283" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Загрузить фотографию из галереии">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YBV-z4-CuM" kind="show" id="Byd-Y1-G4h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9m-hc-xlD">
+                                <rect key="frame" x="46" y="336" width="283" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Загрузить фотографию с камеры">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ubj-9f-ASs" kind="show" id="WhC-zc-y2Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vFA-95-x24"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zVo-OT-Sqq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5u-Ai-bIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="-287"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="liK-PD-22j">
+            <objects>
+                <viewController id="Ubj-9f-ASs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ka-hx-zbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ve-id-thp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lxq-tw-cJV" firstAttribute="bottom" secondItem="2Ve-id-thp" secondAttribute="bottom" id="2dO-r9-4Wb"/>
+                            <constraint firstItem="2Ve-id-thp" firstAttribute="top" secondItem="lxq-tw-cJV" secondAttribute="top" id="4FT-d1-8N9"/>
+                            <constraint firstItem="2Ve-id-thp" firstAttribute="leading" secondItem="lxq-tw-cJV" secondAttribute="leading" id="81V-DA-u9V"/>
+                            <constraint firstItem="lxq-tw-cJV" firstAttribute="trailing" secondItem="2Ve-id-thp" secondAttribute="trailing" id="BI5-LR-YtH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lxq-tw-cJV"/>
+                        <connections>
+                            <outlet property="view" destination="2Ve-id-thp" id="4CQ-tW-Phi"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="8VP-5i-T1P"/>
+                    <connections>
+                        <segue destination="lCV-Ld-RXl" kind="show" id="D9B-2y-say"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6I-zd-vTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="129"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="XsL-oI-VOL">
+            <objects>
+                <viewController id="YBV-z4-CuM" customClass="PhotoViewController" customModule="GenerationPrototypes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEF-u6-dQv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6O1-iU-fEA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Cl-WS-b4f"/>
+                    <connections>
+                        <segue destination="lCV-Ld-RXl" kind="show" id="u5W-fB-vJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEe-71-g2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="-754"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sEu-1I-NR0">
+            <objects>
+                <viewController id="lCV-Ld-RXl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FJY-c1-b2B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6UE-T7-ZU3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lR6-sV-AFg"/>
+                    <connections>
+                        <segue destination="eXn-Se-rX6" kind="show" id="U8g-wl-h3l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzM-jK-LXm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3281" y="129"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="D9B-2y-say"/>
+        <segue reference="27a-My-xQO"/>
+        <segue reference="PIy-GM-WuD"/>
+    </inferredMetricsTieBreakers>
+</document>
