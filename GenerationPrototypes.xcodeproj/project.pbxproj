@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26D154D32482D2140073E6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D154D22482D2140073E6E9 /* AppDelegate.swift */; };
 		26D154D52482D2140073E6E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D154D42482D2140073E6E9 /* SceneDelegate.swift */; };
-		26D154D72482D2140073E6E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D154D62482D2140073E6E9 /* ViewController.swift */; };
 		26D154DA2482D2140073E6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D154D82482D2140073E6E9 /* Main.storyboard */; };
 		26D154DD2482D2140073E6E9 /* GenerationPrototypes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26D154DB2482D2140073E6E9 /* GenerationPrototypes.xcdatamodeld */; };
 		26D154DF2482D2140073E6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D154DE2482D2140073E6E9 /* Assets.xcassets */; };
@@ -43,18 +42,14 @@
 		26DB9B6C2484196A004AF007 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB9B6B2484196A004AF007 /* TextField.swift */; };
 		26DB9B7224845AB3004AF007 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 26DB9B7124845AB3004AF007 /* Inceptionv3.mlmodel */; };
 		26DB9B7424845DF2004AF007 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB9B7324845DF2004AF007 /* ImagePicker.swift */; };
-		26DB9B7624846518004AF007 /* CreateNewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB9B7524846518004AF007 /* CreateNewProjectViewController.swift */; };
 		26E3CDFF2483B11A00F0A267 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3CDFE2483B11A00F0A267 /* CameraController.swift */; };
 		26E3CE012483B1FA00F0A267 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3CE002483B1FA00F0A267 /* CameraViewController.swift */; };
-		26E3CE052483BF9300F0A267 /* ListScreensProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3CE042483BF9300F0A267 /* ListScreensProjectViewController.swift */; };
-		26E3CE072483BFCD00F0A267 /* ListProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3CE062483BFCD00F0A267 /* ListProjectsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26D154CF2482D2140073E6E9 /* GenerationPrototypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerationPrototypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D154D22482D2140073E6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D154D42482D2140073E6E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26D154D62482D2140073E6E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26D154D92482D2140073E6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26D154DC2482D2140073E6E9 /* GenerationPrototypes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GenerationPrototypes.xcdatamodel; sourceTree = "<group>"; };
 		26D154DE2482D2140073E6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,11 +84,8 @@
 		26DB9B6B2484196A004AF007 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		26DB9B7124845AB3004AF007 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		26DB9B7324845DF2004AF007 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		26DB9B7524846518004AF007 /* CreateNewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewProjectViewController.swift; sourceTree = "<group>"; };
 		26E3CDFE2483B11A00F0A267 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		26E3CE002483B1FA00F0A267 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		26E3CE042483BF9300F0A267 /* ListScreensProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreensProjectViewController.swift; sourceTree = "<group>"; };
-		26E3CE062483BFCD00F0A267 /* ListProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProjectsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +127,8 @@
 				26D154ED2482D2440073E6E9 /* LibraryModule */,
 				26D154EB2482D2390073E6E9 /* CameraModule */,
 				26D154EA2482D2330073E6E9 /* PhotoService */,
-				26D154E92482D21B0073E6E9 /* MainModule */,
 				26D154D22482D2140073E6E9 /* AppDelegate.swift */,
+				26DB9B592484150F004AF007 /* GlobalVariables.swift */,
 				26D154D42482D2140073E6E9 /* SceneDelegate.swift */,
 				26D154D82482D2140073E6E9 /* Main.storyboard */,
 				26D154DE2482D2140073E6E9 /* Assets.xcassets */,
@@ -145,18 +137,6 @@
 				26D154DB2482D2140073E6E9 /* GenerationPrototypes.xcdatamodeld */,
 			);
 			path = GenerationPrototypes;
-			sourceTree = "<group>";
-		};
-		26D154E92482D21B0073E6E9 /* MainModule */ = {
-			isa = PBXGroup;
-			children = (
-				26D154D62482D2140073E6E9 /* ViewController.swift */,
-				26E3CE042483BF9300F0A267 /* ListScreensProjectViewController.swift */,
-				26E3CE062483BFCD00F0A267 /* ListProjectsViewController.swift */,
-				26DB9B592484150F004AF007 /* GlobalVariables.swift */,
-				26DB9B7524846518004AF007 /* CreateNewProjectViewController.swift */,
-			);
-			path = MainModule;
 			sourceTree = "<group>";
 		};
 		26D154EA2482D2330073E6E9 /* PhotoService */ = {
@@ -335,9 +315,7 @@
 				26D155072482D5790073E6E9 /* CoreDataService.swift in Sources */,
 				26DB9B7224845AB3004AF007 /* Inceptionv3.mlmodel in Sources */,
 				26E3CDFF2483B11A00F0A267 /* CameraController.swift in Sources */,
-				26E3CE072483BFCD00F0A267 /* ListProjectsViewController.swift in Sources */,
 				26DB9B5A2484150F004AF007 /* GlobalVariables.swift in Sources */,
-				26D154D72482D2140073E6E9 /* ViewController.swift in Sources */,
 				26D155472482D9650073E6E9 /* Project+CoreDataProperties.swift in Sources */,
 				26D154D32482D2140073E6E9 /* AppDelegate.swift in Sources */,
 				26DB9B5C24841776004AF007 /* Button.swift in Sources */,
@@ -354,12 +332,10 @@
 				26D155432482D9650073E6E9 /* Element+CoreDataProperties.swift in Sources */,
 				26DB9B5E24841923004AF007 /* Label.swift in Sources */,
 				26DB9B6824841956004AF007 /* Switch.swift in Sources */,
-				26E3CE052483BF9300F0A267 /* ListScreensProjectViewController.swift in Sources */,
 				26D155492482F4620073E6E9 /* PhotoService.swift in Sources */,
 				26D155532482F5E50073E6E9 /* GenerateUIElementService.swift in Sources */,
 				26D155422482D9650073E6E9 /* Element+CoreDataClass.swift in Sources */,
 				26D1554F2482F5C00073E6E9 /* CoreMLService.swift in Sources */,
-				26DB9B7624846518004AF007 /* CreateNewProjectViewController.swift in Sources */,
 				26D155412482D9650073E6E9 /* Screen+CoreDataProperties.swift in Sources */,
 				26D155442482D9650073E6E9 /* Action+CoreDataClass.swift in Sources */,
 				26D155552482F5FA0073E6E9 /* PresentScreenService.swift in Sources */,
